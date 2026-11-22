@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>AppNest — RepoStore Web Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-badge">▶</span>
+      <span class="brand-name">AppNest</span>
+      <span class="brand-chip">Releases</span>
+    </a>
+    <div class="search-wrap">
+      <span class="search-ico">⌕</span>
+      <input class="search" id="q" type="search" placeholder="Search apps, games, packages...">
+    </div>
+    <nav class="nav-tabs" id="navTabs">
+      <button class="nav-tab active" data-tab="home">For you</button>
+      <button class="nav-tab" data-tab="games">Games</button>
+      <button class="nav-tab" data-tab="apps">Apps</button>
+      <button class="nav-tab" data-tab="updates">Updates</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <nav class="bottom-nav" aria-label="Primary navigation">
+    <button class="bnav-btn active" data-tab="home"><span>⌂</span><small>Home</small></button>
+    <button class="bnav-btn" data-tab="games"><span>◈</span><small>Games</small></button>
+    <button class="bnav-btn" data-tab="apps"><span>⊞</span><small>Apps</small></button>
+    <button class="bnav-btn" data-tab="updates"><span>↻</span><small>Updates</small></button>
+  </nav>
+
+  <div class="toast" id="t" role="status" aria-live="polite"></div>
+  <script type="module" src="js/store.js"></script>
+</body>
+</html>
